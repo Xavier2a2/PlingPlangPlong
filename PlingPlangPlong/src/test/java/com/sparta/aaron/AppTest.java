@@ -1,7 +1,5 @@
 package com.sparta.aaron;
 
-import static org.junit.Assert.assertTrue;
-
 import com.sparta.aaron.PlingPlangPlong.PlingPlangPlong;
 import org.junit.Assert;
 import org.junit.Test;
@@ -17,13 +15,13 @@ public class AppTest
     @Test
     public void plingPlangPlongTrueTests()
     {
-        Assert.assertTrue(PlingPlangPlong.calculateResult(6).equals("Pling"));
-        Assert.assertTrue(PlingPlangPlong.calculateResult(10).equals("Plang"));
-        Assert.assertTrue(PlingPlangPlong.calculateResult(14).equals("Plong"));
-        Assert.assertTrue(PlingPlangPlong.calculateResult(15).equals("PlingPlang"));
-        Assert.assertTrue(PlingPlangPlong.calculateResult(21).equals("PlingPlong"));
-        Assert.assertTrue(PlingPlangPlong.calculateResult(35).equals("PlangPlong"));
-        Assert.assertTrue(PlingPlangPlong.calculateResult(210).equals("PlingPlangPlong"));
+        Assert.assertEquals("Pling", PlingPlangPlong.calculateResult(6));
+        Assert.assertEquals("Plang", PlingPlangPlong.calculateResult(10));
+        Assert.assertEquals("Plong", PlingPlangPlong.calculateResult(14));
+        Assert.assertEquals("PlingPlang", PlingPlangPlong.calculateResult(15));
+        Assert.assertEquals("PlingPlong", PlingPlangPlong.calculateResult(21));
+        Assert.assertEquals("PlangPlong", PlingPlangPlong.calculateResult(35));
+        Assert.assertEquals("PlingPlangPlong", PlingPlangPlong.calculateResult(210));
     }
 
 }
